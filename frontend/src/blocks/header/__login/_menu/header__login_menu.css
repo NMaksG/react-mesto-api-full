@@ -1,0 +1,9 @@
+.header__login_menu {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: none;
+}

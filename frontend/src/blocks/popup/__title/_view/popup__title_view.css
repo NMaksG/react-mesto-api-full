@@ -1,0 +1,13 @@
+.popup__title_view {
+    max-width: 430px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  

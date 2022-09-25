@@ -1,0 +1,33 @@
+.popup__content_form {
+  padding: 60px 0;
+  max-width: 430px;
+  max-height: 430px;
+  width: 100%;
+}
+
+.popup__pic {
+  margin: 0 auto 32px;
+  max-width: 120px;
+  max-height: 120px;
+  width: 100%;
+}
+
+.popup__title_form {
+  max-width: 358px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 935px) {
+  .popup__content_form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 280px;
+    min-height: 308px;
+  }
+  .popup__title_form {
+    font-size: 20px;
+  }
+}

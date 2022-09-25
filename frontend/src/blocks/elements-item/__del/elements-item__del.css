@@ -1,0 +1,17 @@
+.elements-item__del {
+    padding: 0;
+    width: 18px;
+    height: 19px;
+    background: transparent url(../../../images/delCard.svg) center no-repeat;
+    background-size: 18px 19px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: opacity 1s;
+  } 
+  
+  .elements-item__del:hover {
+    opacity: .6;
+  }

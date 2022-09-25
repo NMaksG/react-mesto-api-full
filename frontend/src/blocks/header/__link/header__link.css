@@ -1,0 +1,22 @@
+.header__link {
+  margin: 0;
+  padding: 0;
+  margin-left: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  cursor: pointer;
+}
+
+.header__link:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 935px) {
+  .header__link {
+    font-size: 14px;
+  }
+}  

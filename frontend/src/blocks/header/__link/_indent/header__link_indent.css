@@ -1,0 +1,5 @@
+@media screen and (max-width: 935px) {
+  .header__link_indent {
+    margin-right: 30px;
+  }
+}

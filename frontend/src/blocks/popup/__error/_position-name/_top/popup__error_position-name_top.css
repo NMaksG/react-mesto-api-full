@@ -1,0 +1,9 @@
+.popup__error_position-name_top {
+    top: 143px;
+  }
+  
+@media screen and (max-width: 935px) {
+  .popup__error_position-name_top {
+      top: 149px;
+  }
+}
