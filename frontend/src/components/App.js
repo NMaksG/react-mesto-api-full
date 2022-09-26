@@ -73,7 +73,6 @@ function App() {
 
   function handleCardLike(card) {
     const isLiked = card.likes.some((item) => item === currentUser._id);
-    // const isLiked = card.likes.some((item) => item._id === currentUser._id);
     api.setLikeCard(card, isLiked)
     .then((res) => {
       setCards((cards) => cards.map((item) => item._id === card._id ? res : item));
@@ -136,15 +135,9 @@ function App() {
   }
 
   function tokenCheck() {
-    // const jwt = localStorage.getItem('jwt');
-    // if(!jwt) {
-    //   return;
-    // }
-    // auth.getContent(jwt)
     auth.getContent()
       .then((res) => {
         setUserInfo(res.email);
-        // setUserInfo(res.data.email);
         setLoggedIn(true);
       })
       .catch((err) => {
@@ -167,8 +160,6 @@ function App() {
     .then((res) => {
       setUserInfo(data.email);
       setLoggedIn(true);
-      // localStorage.setItem('jwt', res.token);
-      // localStorage.setItem('jwt', res.user.password);
     })
     .catch((err) => {
       setIsInfoTooltipPopupOpen(true);
@@ -192,11 +183,10 @@ function App() {
   }
 
   function handleLogout() {
-    history.push('/sign-in');
     return auth.logout()
     .then((res) => {
+      history.push('/sign-in');
       setLoggedIn(false);
-      // localStorage.removeItem('jwt');
     })
     .catch((err) => {
       console.log(err);

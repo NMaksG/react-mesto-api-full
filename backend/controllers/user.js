@@ -119,8 +119,6 @@ module.exports.login = async (req, res, next) => {
       return next(new UnauthorizedError('Неправильные почта или пароль'));
     }
     const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret');
-    // const token = jwt.sign({ _id: user._id }, 'SECRET');
-    // const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
     res.cookie('jwt', token, {
       maxAge: 3600000,
       httpOnly: true,
@@ -130,7 +128,6 @@ module.exports.login = async (req, res, next) => {
       name: user.name, about: user.about, avatar: user.avatar, email,
     });
   } catch (err) {
-    // return next(new InternalServerError('Произошла ошибка на сервере'));
     return next(err);
   }
 };
