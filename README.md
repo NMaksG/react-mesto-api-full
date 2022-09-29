@@ -22,4 +22,8 @@
   - Сделать валидацию форм
   - Вплывающие подтверждения для удаления карточек
 
-<!-- [Ссылка на проект](https://github.com/NMaksG/mesto-react.git) -->
+[Ссылка на проект](https://github.com/NMaksG/react-mesto-api-full.git)
+
+* IP 51.250.73.44
+* Frontend https://nmg.nomoredomains.club
+* Backend https://api.nmg.nomoredomains.club

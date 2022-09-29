@@ -1,5 +1,6 @@
 // const baseUrl = 'https://auth.nomoreparties.co';
-const baseUrl = 'http://localhost:4000';
+// const baseUrl = 'http://localhost:4000';
+const baseUrl = 'https://api.nmg.nomoredomains.club';
 
 const checkResponse = (response) =>
   response.ok ?
