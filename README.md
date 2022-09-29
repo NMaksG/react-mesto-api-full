@@ -24,6 +24,6 @@
 
 [Ссылка на проект](https://github.com/NMaksG/react-mesto-api-full.git)
 
-* IP 51.250.73.44
-* Frontend https://nmg.nomoredomains.club
-* Backend https://api.nmg.nomoredomains.club
+IP 51.250.73.44
+Frontend https://nmg.nomoredomains.club
+Backend https://api.nmg.nomoredomains.club
