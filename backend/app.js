@@ -53,9 +53,9 @@ app.use(auth);
 app.use(userRouter);
 app.use(cardRouter);
 
-app.use(errorLogger);
-
 app.use((req, res, next) => next(new NotFoundError('Запрашиваемая страница не найдена')));
+
+app.use(errorLogger);
 
 app.use(errors());
 
