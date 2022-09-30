@@ -53,6 +53,12 @@ app.use(auth);
 app.use(userRouter);
 app.use(cardRouter);
 
+app.use(errorLogger);
+
+app.use((req, res, next) => next(new NotFoundError('Запрашиваемая страница не найдена')));
+
+app.use(errors());
+
 app.use((err, req, res, next) => {
   const { statusCode = 500, message } = err;
 
@@ -65,12 +71,6 @@ app.use((err, req, res, next) => {
     });
   next(err);
 });
-
-app.use(errorLogger);
-
-app.use((req, res, next) => next(new NotFoundError('Запрашиваемая страница не найдена')));
-
-app.use(errors());
 
 async function main() {
   try {
